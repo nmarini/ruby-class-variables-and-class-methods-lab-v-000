@@ -14,7 +14,7 @@ class Song
 
       @@genres << @genre
       @@artists << @artist
- 
+
 
 
     end
@@ -27,15 +27,15 @@ class Song
   def self.artists
     a = [];
     @@artists.each{|artist| a << artist unless a.include?(artist)};
-    a;   
-    
+    a;
+
   end
 
   def self.genres
    g = [];
     @@genres.each{|genre| g << genre unless g.include?(genre)};
-    g;   
-    
+    g;
+
   end
 
 
